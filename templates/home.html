@@ -1,22 +1,6 @@
-
-<html>
-<head>
 <h1>Vice Versa</h1>
-<style>
-textarea {
-	resize: none;
-}
-</style>
-</head>
-<form>
-<textarea id="Vice Versa" name="Vice Versa" rows="10" cols="50"></textarea>
+<form action="{% url 'reverse' %}">
+	<textarea cols="50" rows="10" name="usertext"></textarea>
+	<br><br>
+	<input type="submit" value="Reverse!">
 </form>
-<meta charset="utf-8">
-<title>Home Page</title>
-<body> 
- <form>
-  <p><input type="button" value=" Reverse!"></p>
- </form>
- </body>
-</body>
-</html>
